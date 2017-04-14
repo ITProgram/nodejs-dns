@@ -3,15 +3,21 @@
   "version": "0.0.1",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "bluebird": "^3.5.0",
     "body-parser": "^1.15.2",
+    "body-parser-xml": "^1.1.0",
     "cookie-parser": "^1.4.3",
+    "easyxml": "^2.0.1",
     "express": "^4.14.0",
+    "jsonwebtoken": "^7.3.0",
     "mysql": "^2.11.1",
+    "needle": "^1.6.0",
     "sequelize": "^3.24.1"
   },
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "xottabych <snpir.a-ius@ya.ru> (https://www.npmjs.com/~xottabych)",
