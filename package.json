@@ -8,7 +8,7 @@
     "body-parser-xml": "^1.1.0",
     "cookie-parser": "^1.4.3",
     "easyxml": "^2.0.1",
-    "express": "^4.14.0",
+    "express": "^4.15.2",
     "jsonwebtoken": "^7.3.0",
     "mysql": "^2.11.1",
     "needle": "^1.6.0",
@@ -19,6 +19,9 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "7.8.0"
   },
   "author": "xottabych <snpir.a-ius@ya.ru> (https://www.npmjs.com/~xottabych)",
   "license": "ISC",
