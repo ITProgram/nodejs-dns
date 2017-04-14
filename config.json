@@ -6,12 +6,6 @@
     "password": "dce0ffe2ccf60a20c895097d70bf7a0ecd7c5068add04a91cf2f6e7fb90ee056",
     "dialect": "postgres"
   },
-  "da": {
-    "host": "127.0.0.1",
-    "name": "DNS",
-    "user": "root",
-    "password": ""
-  },
   "env": "dev",
   "cookie": {
     "key": "secret key",

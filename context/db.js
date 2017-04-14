@@ -4,20 +4,7 @@ module.exports = (Sequelize, config) => {
         dialect: config.db.dialect,
         dialectOptions: {ssl: true}
     };
-    const optionsL = {
-        host: config.db.host,
-        dialect: 'mysql',
-        logging: false,
-        define: {
-            timestamps: true,
-            paranoid: true,
-            defaultScope: {
-                where: {
-                    deletedAt: {$eq: null}
-                }
-            }
-        }
-    };
+
 
     const sequelize = new Sequelize(config.db.name, config.db.user, config.db.password, options);
 
