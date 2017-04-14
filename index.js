@@ -26,7 +26,7 @@ app.use(express.static('public'));
 app.use(cookieParser(config.cookie.key));
 app.use(bodyParser.json());
 app.use(bodyParser.xml());
-
+const port = process.env.PORT || 3000;
 //xml parser
 /*
 app.use(bodyParser.xml({
@@ -46,7 +46,7 @@ app.use('/api', logger);
 dbcontext.sequelize
     .sync()
     .then(() => {
-        app.listen(3000, () => console.log('Running'));
+        app.listen(port, () => console.log('Running'));
     })
     .catch((err) => console.log(err));
 
