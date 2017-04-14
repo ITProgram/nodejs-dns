@@ -1,0 +1,20 @@
+{
+  "name": "sample",
+  "version": "0.0.1",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "mysql": "^2.11.1",
+    "sequelize": "^3.24.1"
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xottabych <snpir.a-ius@ya.ru> (https://www.npmjs.com/~xottabych)",
+  "license": "ISC",
+  "description": ""
+}
