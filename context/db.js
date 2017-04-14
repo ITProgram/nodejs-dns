@@ -1,6 +1,11 @@
 module.exports = (Sequelize, config) => {
     const options = {
         host: config.db.host,
+        dialect: config.db.dialect,
+        dialectOptions: {ssl: true}
+    };
+    const optionsL = {
+        host: config.db.host,
         dialect: 'mysql',
         logging: false,
         define: {
