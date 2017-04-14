@@ -1,9 +1,9 @@
 {
   "db": {
-    "host": "ec2-54-243-185-99.compute-1.amazonaws.com",
-    "name": "da2f9fja1hin72",
-    "user": "hbbnkhapmikhuw",
-    "password": "95b2baec4326e5f3f25866addd55bad874570746a9f0f63040d87cdb02a40ad7",
+    "host": "ec2-54-235-153-124.compute-1.amazonaws.com",
+    "name": "d8d3ra2klifov5",
+    "user": "zlpubxifnjybbj",
+    "password": "dce0ffe2ccf60a20c895097d70bf7a0ecd7c5068add04a91cf2f6e7fb90ee056",
     "dialect": "postgres"
   },
   "da": {
