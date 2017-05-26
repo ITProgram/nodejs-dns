@@ -1,12 +1,28 @@
 module.exports = (Sequelize, config) => {
-    const options = {
+    const optionsProduction = {
         host: config.db.host,
         dialect: config.db.dialect,
         dialectOptions: {ssl: true}
     };
-
-
-    const sequelize = new Sequelize(config.db.name, config.db.user, config.db.password, options);
+    const optionsLocal = {
+        host: config.dbl.host,
+        dialect: 'mysql',
+        logging: false,
+        define: {
+            timestamps: true,
+            paranoid: true,
+            defaultScope: {
+                where: {
+                    deletedAt: {$eq: null}
+                }
+            }
+        }
+    };
+    let sequelize;
+    if (global.isProduction = process.env.NODE_ENV === 'production')
+        sequelize = new Sequelize(config.db.name, config.db.user, config.db.password, optionsProduction);
+    else
+        sequelize = new Sequelize(config.dbl.name, config.dbl.user, config.dbl.password, optionsLocal);
 
     const User = require('../models/user')(Sequelize, sequelize);
     const Domain = require('../models/domain')(Sequelize, sequelize);
