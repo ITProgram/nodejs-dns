@@ -36,7 +36,7 @@ module.exports = (userRepository, errors) => {
                         users.forEach(function(item, i, array) {
                             arr.push(item.dataValues);
                         });
-                        resolve({users: arr})
+                        resolve(arr)
                     })
                     .catch(reject);
             });
