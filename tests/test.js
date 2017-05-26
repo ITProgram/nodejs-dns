@@ -18,6 +18,7 @@ const domainService = require('../services/domain')(dbcontext.domain,dbcontext.u
 const auth = require('../utils/auth')(authService, config, errors);
 
 test(' user readAll', () => {
+    console.log(process.env.NODE_ENV);
     return userService.readAllUser()
         .then(users => {
             console.log(users);

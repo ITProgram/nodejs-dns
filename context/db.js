@@ -19,7 +19,7 @@ module.exports = (Sequelize, config) => {
         }
     };
     let sequelize;
-    if (global.isProduction = process.env.NODE_ENV === 'production')
+    if (global.isProduction = process.env.NODE_ENV === 'production' ||  process.env.NODE_ENV === 'test')
         sequelize = new Sequelize(config.db.name, config.db.user, config.db.password, optionsProduction);
     else
         sequelize = new Sequelize(config.dbl.name, config.dbl.user, config.dbl.password, optionsLocal);
